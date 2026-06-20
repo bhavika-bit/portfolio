@@ -1,0 +1,152 @@
+\documentclass[10.5pt,letterpaper]{article}
+
+% ---------- PACKAGES ----------
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.6in,right=0.6in,top=0.28in,bottom=0.28in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+% ---------- COLORS ----------
+\definecolor{linkblue}{RGB}{0,0,238}
+
+% ---------- HYPERLINK SETUP ----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    pdftitle={Bhavika Jata Resume},
+    pdfauthor={Bhavika Jata}
+}
+
+% ---------- PAGE SETUP ----------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\baselinestretch}{0.96}
+
+% ---------- SECTION FORMAT ----------
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+% ---------- CUSTOM LIST ----------
+\setlist[itemize]{leftmargin=15pt, topsep=1pt, itemsep=0pt, parsep=0pt}
+
+% ---------- CUSTOM COMMANDS ----------
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill \textbf{\small #2} \\[-1pt]
+  \textit{\small#3} \hfill \textit{\small #4} \\[-2pt]
+}
+
+\newcommand{\resumeProject}[2]{
+  \textbf{#1} \hfill \textbf{\small #2} \\[-1pt]
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    {\LARGE \bfseries Bhavika Jata}\\[3pt]
+    \small
+    Mumbai, Maharashtra, India $|$ \href{mailto:bhavikajata2005@gmail.com}{bhavikajata2005@gmail.com} $|$ +91 7219533681 \\[1pt]
+    \href{https://www.linkedin.com/in/bhavika-jata-2b9b6b303/}{LinkedIn} $|$
+    \href{https://github.com/bhavika-bit}{GitHub} $|$
+    Portfolio
+\end{center}
+
+% ---------- SUMMARY ----------
+\vspace{-2pt}
+\small
+AI \& Data Science engineer (B.Tech, SGPA: 9.5/10, CGPA: 8.66/10) specialising in production-ready GenAI systems --- RAG pipelines, LLM-powered agents, and FAISS-backed vector search. Engineered an NLP-to-SQL AI agent at Tata Technologies and automated data pipelines at L\&T Precision cutting manual effort by 40\%. Built and deployed ResearchEngine, a multi-module AI research assistant with semantic document ingestion and mentor-style LLM conversations. Targeting AI/ML engineering and GenAI product roles.
+
+% ---------- WORK EXPERIENCE ----------
+\section{Work Experience}
+
+\resumeSubheading
+{AI Intern}{Dec 2025 -- Jan 2026}
+{Tata Technologies Ltd., Pune}{}
+\begin{itemize}
+    \resumeItem{Built an NLP-to-SQL AI agent for the HR department using LangChain (via Langflow), enabling non-technical staff to query databases in plain English.}
+    \resumeItem{Architected 3+ modular LangChain agent workflows, reducing prototype-to-demo time by \textasciitilde30\% and cutting experimentation cycle time by 25\%.}
+    \resumeItem{Engineered reusable Python-based AI components, improving workflow modularity and enabling faster iteration.}
+\end{itemize}
+
+\resumeSubheading
+{Data Analyst Intern}{May 2025 -- Jun 2025}
+{L\&T Precision Engineering, Mumbai}{}
+\begin{itemize}
+    \resumeItem{Automated Python-based web scraping pipelines, cutting manual data collection effort by 40\%.}
+    \resumeItem{Built an SVM-based sentiment analysis model attaining 78.0\% classification accuracy.}
+    \resumeItem{Crafted an interactive Power BI dashboard adopted by business teams to track KPIs and surface weekly actionable insights.}
+\end{itemize}
+
+% ---------- EDUCATION ----------
+\section{Education}
+
+\resumeSubheading
+{K. J. Somaiya School of Engineering, Mumbai}{Aug 2023 -- May 2027}
+{B.Tech in Artificial Intelligence \& Data Science (Honors in Data Engineering)}{SGPA: 9.5/10 $|$ CGPA: 8.66/10}
+\small{Relevant Coursework: Data Structures \& Algorithms, Machine Learning, Deep Learning, Artificial Intelligence, Database Management Systems, Probability \& Statistics}
+
+% ---------- PROJECTS ----------
+\vspace{-5pt}
+\section{Projects}
+
+\resumeProject{\href{https://github.com/bhavika-bit/RE-SEARCH-ENGINE}{ResearchEngine}}{May 2026 (ongoing)}
+\begin{itemize}
+    \resumeItem{Developed an AI-powered RAG based LLM research assistant using Python, LangChain, Gemini, and FAISS.}
+    \resumeItem{Built a multi-format document ingestion and semantic search system for research documents.}
+    \resumeItem{Designed for researchers at all levels --- from literature discovery and paper analysis to mentor-style AI conversations, significantly reducing multi-source search effort.}
+\end{itemize}
+
+\resumeProject{\href{https://github.com/bhavika-bit/GROUP-22_CNN-VS.-QCNN-FOR-SUGARCANE-LEAF-DISEASE-DETECTION}{CNN vs. Quantum CNN --- Sugarcane Leaf Disease Detection}}{Jan 2026 (ongoing)}
+\begin{itemize}
+    \resumeItem{Benchmarked Custom CNN, EfficientNet-B0, and MobileNet-V2 on a 13-class sugarcane disease dataset, with EfficientNet-B0 achieving the highest test accuracy of 96.79\% and F1-score of 0.97.}
+    \resumeItem{Built Python preprocessing and augmentation pipelines training on 12,000+ images, with Custom CNN from scratch achieving 94.9\% train and 93.21\% validation accuracy as a strong classical baseline.}
+    \resumeItem{Extending the study toward Quantum CNN architectures to evaluate whether quantum feature extraction can surpass EfficientNet-B0's 96.79\% benchmark --- targeting a classical vs. quantum comparative analysis.}
+\end{itemize}
+
+\resumeProject{\href{https://github.com/bhavika-bit/CROP-RECOMMENDATION-AND-YIELD-PREDICTION}{Crop Recommendation \& Yield Prediction System}}{Nov 2023}
+\begin{itemize}
+    \resumeItem{Engineered ensemble ML models (Random Forest, XGBoost, Voting Classifier) in Python achieving 99.52\% prediction accuracy on a scalable pipeline processing 10,000+ records across 21 crop types.}
+    \resumeItem{Integrated MODIS satellite imagery via Google Earth Engine for geospatial temperature analysis.}
+\end{itemize}
+
+\textbf{Resume Eligibility Parser} \hfill \textit{\small Jun 2024}\\
+{\small Designed a rule-based NLP engine in Python processing 50+ resumes, eliminating manual review for 80\% of unqualified applicants; deployed via Streamlit, cutting decision time from 5 minutes to under 30 seconds.}
+
+\vspace{2pt}
+\textbf{Social Media Sentiment Analysis} \hfill \textit{\small Apr 2023}\\
+{\small Built an end-to-end NLP pipeline using SVM (Python/Scikit-learn) achieving 92\% accuracy classifying 2,000+ Google Form survey responses on social media usage, cutting collection and cleaning time by 60\%.}
+
+% ---------- SKILLS ----------
+\vspace{-6pt}
+\section{Skills}
+\small
+\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=0pt, parsep=0pt]
+    \item \textbf{Programming:} Python, SQLite, MySQL, PostgreSQL, MS Excel
+    \item \textbf{ML / DL Frameworks:} TensorFlow, Keras, PyTorch, Scikit-learn, XGBoost, SVM, Random Forest, CNN, RNN, Transfer Learning, Transformer models
+    \item \textbf{NLP \& AI Orchestration:} LangChain, Langflow, NLP Pipelines, BeautifulSoup, Selenium, RestAPI, RAG pipelines, Vector Databases (FAISS, ChromaDB), Large Language Models (LLMs), Liquid Neural Networks, Timeseries Forecasting
+    \item \textbf{Version Control:} Git, GitHub \quad $|$ \quad \textbf{Big Data \& Engineering:} Hadoop, PySpark, ETL Pipelines
+    \item \textbf{Data Visualization \& BI:} Power BI, Tableau, Matplotlib, Seaborn, Streamlit
+    \item \textbf{Geospatial \& Remote Sensing:} Google Earth Engine, QGIS
+\end{itemize}
+
+% ---------- CERTIFICATIONS ----------
+\vspace{-6pt}
+\section{Certifications}
+\small
+\begin{itemize}[leftmargin=15pt, topsep=0pt, itemsep=0pt, parsep=0pt]
+    \resumeItem{\href{https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_68fe286e8740460a8e2eee23_1781158647518_completion_certificate.pdf}{Tata --- GenAI Powered Data Analytics Job Simulation, Forage} --- Jun 2026}
+    \resumeItem{\href{https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_68fe286e8740460a8e2eee23_1764513814343_completion_certificate.pdf}{Deloitte Australia --- Data Analytics Job Simulation, Forage} --- Nov 2025}
+    \resumeItem{\href{https://moonshot.scaler.com/s/sl/YaiX7O36x6}{EDA \& Data Visualization in Data Science} --- Scaler, Mar 2025}
+\end{itemize}
+
+\end{document}
